@@ -18,7 +18,7 @@ module.exports = (userEmail = '', params = {}, token = '', basicUrl) => ({
       url: `${basicUrl}/users/${userEmail}/meetings?${queryString}`,
       headers: {
         Authorization: `Bearer ${token}`,
-        'User-Agent': 'Zoom-api-Jwt-Request',
+        // 'User-Agent': 'Zoom-api-Jwt-Request',
         'content-type': 'application/json'
       }
     }
