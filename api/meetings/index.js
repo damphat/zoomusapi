@@ -25,7 +25,7 @@ module.exports = (userEmail = '', params = {}, token = '', basicUrl) => ({
   },
   createMeeting: () => {
     const tomorrow = new Date()
-    tomorrow.setDate(tomorrow.getDate() + 1).toISOString().replace(/\..+/, '')
+    tomorrow.setDate(tomorrow.getDate() + 1)
     let bodyData = {
       start_time: tomorrow,
       timezone: 'Europe/Moscow',
